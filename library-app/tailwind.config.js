@@ -25,7 +25,11 @@ export default {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#ff4800',
+      }
+    },
   },
   variants: {
     extend: {},
