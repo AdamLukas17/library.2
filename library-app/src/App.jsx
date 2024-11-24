@@ -1,10 +1,10 @@
 // import { useState } from 'react'
-import AddButton from './AddButton';
+import MainContainer from './MainContainer';
 
 function App() {
   return( 
-  <div className = "container px-4 py-20">
-    <AddButton />
+  <div>
+    <MainContainer />
   </div>
 )}
 

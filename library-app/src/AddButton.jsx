@@ -1,10 +1,22 @@
+import React from 'react';
+import Modal from './Modal';
+
 function AddButton() {
+  const [isButtonClicked, setButtonClick] = React.useState(false)
+  const handleClick = () => {
+    setButtonClick(true)
+  }
     return( 
-        <div className="p-6 max-w-sm mx-auto bg-gray-dark rounded-xl shadow-lg flex items-center gap-x-4">
-        <div>
-          <div className="text-xl font-medium text-primary">Add</div>
-          <p className="text-gray-light">What book have you read?</p>
-        </div>
+      <div className = "flex">
+        <div className="p-6 py-10 max-w-sm mx-auto bg-gray-dark rounded-xl shadow-lg flex items-center gap-x-4">
+          <button 
+          className="text-xl font-medium text-primary" 
+          onClick= {
+            handleClick
+          }
+          >Add</button> 
+      </div>
+      {isButtonClicked && <Modal />}
       </div>
 )}
 
