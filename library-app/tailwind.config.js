@@ -20,6 +20,7 @@ export default {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
+      'pale-blue': '#a5c7d8'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

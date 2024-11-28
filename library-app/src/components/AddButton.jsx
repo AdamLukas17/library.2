@@ -16,7 +16,7 @@ function AddButton() {
     return( 
       <div className="flex flex-col items-center"> {/* Center content */}
      
-      <Button variant="contained" onClick={() => setIsModalOpen(true)}>Add</Button>
+      <Button className="text-pale-blue" variant="contained" onClick={() => setIsModalOpen(true)}>Add Book</Button>
 
       {isModalOpen && <Modal onAddBook={handleAddBook} />}
 

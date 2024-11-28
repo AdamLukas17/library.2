@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import MainContainer from './MainContainer';
+import MainContainer from './components/MainContainer';
 
 function App() {
   return( 
