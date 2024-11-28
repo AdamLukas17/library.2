@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 // eslint-disable-next-line react/prop-types
-function Modal({ onAddBook }) {
+function Modal({ onAddBook, setIsModalOpen }) {
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
 
@@ -66,7 +66,6 @@ function Modal({ onAddBook }) {
                 className="ml-4 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
 
                 type="button"
-                // eslint-disable-next-line no-undef
                 onClick={() => setIsModalOpen(false)}
               >
                 Cancel

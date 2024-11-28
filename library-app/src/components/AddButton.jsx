@@ -18,7 +18,7 @@ function AddButton() {
      
       <Button className="text-pale-blue" variant="contained" onClick={() => setIsModalOpen(true)}>Add Book</Button>
 
-      {isModalOpen && <Modal onAddBook={handleAddBook} />}
+      {isModalOpen && <Modal onAddBook={handleAddBook} setIsModalOpen={setIsModalOpen}/>}
 
       {/* Display the books */}
       <div className="mt-8">
