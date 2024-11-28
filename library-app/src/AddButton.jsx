@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import Modal from './Modal';
+// eslint-disable-next-line no-unused-vars
+import * as React from 'react';
+import Button from '@mui/material/Button';
 
 function AddButton() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,15 +15,8 @@ function AddButton() {
 
     return( 
       <div className="flex flex-col items-center"> {/* Center content */}
-      <div className="p-6 py-6 max-w-sm mx-auto bg-gray-dark rounded-full shadow-lg flex items-center gap-x-2">
      
-        <button
-          className="px-3 py-4 text-sm font-semibold rounded-full bg-gray-light border-purple hover:text-gray-light hover:bg-purple hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 text-purple"
-          onClick={() => setIsModalOpen(true)}
-        >
-          Add
-        </button>
-      </div>
+      <Button variant="contained" onClick={() => setIsModalOpen(true)}>Add</Button>
 
       {isModalOpen && <Modal onAddBook={handleAddBook} />}
 
