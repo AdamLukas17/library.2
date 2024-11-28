@@ -23,7 +23,7 @@ function AddButton() {
       {/* Display the books */}
       <div className="mt-8">
         {books.map((book, index) => (
-          <div key={index} className="border rounded p-4 mb-4">
+          <div key={index} className="border rounded p-10 mb-8">
             {/* Display book details here */}
             <p>Title: {book.title}</p>
             <p>Author: {book.author}</p>
