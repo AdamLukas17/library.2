@@ -17,14 +17,14 @@ function Modal({ onAddBook, setIsModalOpen }) {
         <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="modal-overlay absolute inset-0 bg-gray-500 opacity-75"></div>
 
-      <div className="modal-container bg-white w-11/12 md:max-w-md   
+      <div className="modal-container bg-gray w-11/12 md:max-w-md   
  mx-auto rounded shadow-lg z-50 overflow-y-auto">
         <div className="modal-content py-4 text-left px-6">
-          <h3 className="text-2xl   
+          <h3 className="text-2xl font-overpass   
  font-bold mb-4">Add New Book</h3>
           <form onSubmit={handleSubmit}>
-            <div className="mb-4">
-              <label htmlFor="title" className="block text-gray-700 text-sm font-bold mb-2">
+            <div className="mb-4 font-overpass text-gray-700 text-md font-bold">
+              <label htmlFor="title" className="block text-gray-700 text-md mb-2 font-overpass font-bold">
                 Title:
               </label>
               <input
@@ -39,7 +39,7 @@ function Modal({ onAddBook, setIsModalOpen }) {
             </div>
             <div className="mb-4">
               <label htmlFor="author"
- className="block text-gray-700 text-sm font-bold mb-2">
+ className="block text-gray-700 text-md mb-2 font-overpass font-bold">
                 Author:
               </label>
               <input
@@ -55,7 +55,7 @@ function Modal({ onAddBook, setIsModalOpen }) {
             {/* Add more input fields for other book details */}
             <div className="flex justify-end">
               <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none
+                className="hover:bg-orange text-white font-overpass font-bold py-2 px-4 rounded focus:outline-none
  focus:shadow-outline"
                 type="submit"
               >
@@ -63,7 +63,8 @@ function Modal({ onAddBook, setIsModalOpen }) {
               </button>
 
               <button
-                className="ml-4 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="hover:bg-orange text-white font-overpass font-bold py-2 px-4 rounded focus:outline-none
+ focus:shadow-outline"
 
                 type="button"
                 onClick={() => setIsModalOpen(false)}
