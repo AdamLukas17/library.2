@@ -14,15 +14,16 @@ export default {
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
       'pink': '#ff49db',
-      'orange': '#ff7849',
+      'orange': '#ff7222',
       'green': '#13ce66',
-      'yellow': '#ffc82c',
+      'yellow': '#ffb721',
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
-      'pale-blue': '#a5c7d8'
+      'pale-blue': '#4faaaa'
     },
     fontFamily: {
+      overpass: ['Overpass Mono', "monospace"],
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },

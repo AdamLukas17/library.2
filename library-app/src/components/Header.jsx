@@ -1,10 +1,10 @@
 function Header() {
     return(
         <>
-        <div>
-            <h1>Your Books</h1>
+        <div className="font-overpass">
+            <h>Your Books</h>
         </div>
-        <div>
+        <div className="font-overpass">
             <p>What did you read?</p>
         </div>
         </>

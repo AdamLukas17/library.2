@@ -3,7 +3,7 @@ import Header from "./Header";
 
 function MainContainer() {
     return(
-        <div className = " *:bg-pink">
+        <div className = "">
             <div>
                 <Header />
                 <AddButton /> 
