@@ -20,7 +20,9 @@ export default {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
-      'pale-blue': '#4faaaa'
+      'pale-blue': '#61bfad',
+      'pale-cream': '#f9f7e8',
+      'rose-pink': '#ff8b8b',
     },
     fontFamily: {
       overpass: ['Overpass Mono', "monospace"],
