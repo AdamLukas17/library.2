@@ -14,14 +14,14 @@ function AddButton() {
   };
 
     return( 
-      <div className="flex flex-row items-center"> {/* Center content */}
+      <div className="flex flex-col items-center"> {/* Center content */}
      
-      <Button className= "font-overpass" onClick={() => setIsModalOpen(true)}>Add Book</Button>
+      <Button variant="contained" onClick={() => setIsModalOpen(true)}>Add Book</Button>
 
       {isModalOpen && <Modal onAddBook={handleAddBook} setIsModalOpen={setIsModalOpen}/>}
 
       {/* Display the books */}
-      <div className="m-8">
+      <div className="m-8 flex flex-wrap">
         {books.map((book, index) => (
           <div key={index} className="border rounded p-4 m-2 bg-pale-blue font-overpass text-gray-light">
             {/* Display book details here */}
