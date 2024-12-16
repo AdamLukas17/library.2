@@ -9,7 +9,7 @@ function Header() {
             <h2>Your Books</h2>
         </div>
         <div className="font-overpass">
-            <p>What did you read?</p>
+            <p>Book Count: 0</p>
         </div>
             </div>
         

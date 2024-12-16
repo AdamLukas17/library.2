@@ -73,7 +73,7 @@ function Modal({ onAddBook, setIsModalOpen }) {
             {/* Add more input fields for other book details */}
             <div className="flex justify-end">
               <button
-                className="hover:bg-rose-pink text-white font-overpass font-bold py-2 px-4 rounded focus:outline-none
+                className="hover:bg-orange text-white font-overpass font-bold py-2 px-4 rounded focus:outline-none
  focus:shadow-outline"
                 type="submit"
               >
@@ -81,7 +81,7 @@ function Modal({ onAddBook, setIsModalOpen }) {
               </button>
 
               <button
-                className="hover:bg-rose-pink text-white font-overpass font-bold py-2 px-4 rounded focus:outline-none
+                className="hover:bg-orange text-white font-overpass font-bold py-2 px-4 rounded focus:outline-none
  focus:shadow-outline"
 
                 type="button"

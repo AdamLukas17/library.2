@@ -23,7 +23,7 @@ function AddButton() {
       {/* Display the books */}
       <div className="m-8 flex flex-wrap">
         {books.map((book, index) => (
-          <div key={index} className="border rounded p-4 m-2 bg-pale-blue font-overpass text-gray-light">
+          <div key={index} className="border rounded p-4 m-2 bg-gray-dark font-overpass text-gray-light">
             {/* Display book details here */}
             <p>Title: {book.title}</p>
             <p>Author: {book.author}</p>
